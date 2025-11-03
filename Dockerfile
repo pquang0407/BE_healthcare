@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Build project bằng Maven Wrapper (đã có sẵn trong repo)
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests 
 
 # Chạy file JAR sinh ra trong target/
 CMD ["java", "-jar", "target/yte-gemini-doctor-0.0.1-SNAPSHOT.jar"]
