@@ -1,0 +1,44 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/yte
+    username: postgres
+    password: "0"
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        "[format_sql]": true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+# 🔐 Cấu hình JWT cho hệ thống đăng nhập User/Admin
+app:
+  jwt:
+    secret: "CHANGE_THIS_TO_A_LONG_RANDOM_64+_CHARS_SECRET_KEY_1234567890_CHANGE_ME_PLEASE"
+    expiration-ms: 86400000  # 24h
+
+# 🤖 Cấu hình AI
+ai:
+  gemini:
+    model: gemini-2.0-flash
+    apikey: ${GEMINI_API_KEY}
+    baseurl: "https://generativelanguage.googleapis.com/v1beta/models/"
+
+  openai:
+    model: gpt-4o-mini
+    apikey: ${GPT_API_KEY}
+    baseurl: "https://api.openai.com/v1"
+
+# [ĐÃ LOẠI BỎ] Khối 'drugapi' không còn cần thiết
+#  drugapi:
+#    apikey: "YOUR_OPENFDA_KEY"
+#    baseurl: "https://api.fda.gov"
