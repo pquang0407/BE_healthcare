@@ -1,0 +1,703 @@
+2025-10-21 11:48:02.258 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-21 11:48:02.396 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 20428 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 11:48:02.399 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 11:48:02.399 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 11:48:02.471 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 11:48:02.483 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 11:48:04.715 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 11:48:04.855 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 108 ms. Found 4 JPA repository interfaces.
+2025-10-21 11:48:05.881 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 11:48:05.901 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 11:48:05.914 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 11:48:05.916 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 11:48:06.000 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 11:48:06.000 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3517 ms
+2025-10-21 11:48:06.314 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 11:48:06.447 [34mINFO [0;39m [restartedMain] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-21 11:48:06.514 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 11:48:07.039 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 11:48:07.113 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-21 11:48:07.513 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@364503c
+2025-10-21 11:48:07.525 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-21 11:48:07.746 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 11:48:09.429 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 11:48:09.795 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 11:48:10.329 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 11:48:10.329 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 11:48:10.329 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 11:48:10.478 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 11:48:10.678 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 11:48:10.828 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 18 mappings in 'requestMappingHandlerMapping'
+2025-10-21 11:48:10.928 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 11:48:11.045 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 11:48:11.307 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 11:48:11.411 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 11:48:11.495 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 11:48:11.761 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 11:48:11.877 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 11:48:11.894 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 11:48:11.927 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 10.841 seconds (process running for 11.642)
+2025-10-21 11:53:51.801 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 11:53:51.803 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-21 11:53:51.804 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-21 11:53:51.804 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-21 11:53:51.805 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-21 11:53:51.808 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6d050c1b
+2025-10-21 11:53:51.811 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7c6fa5c2
+2025-10-21 11:53:51.812 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-21 11:53:51.813 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 9 ms
+2025-10-21 11:53:51.881 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-21 11:53:51.944 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 11:53:51.953 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 11:53:51.961 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 11:53:51.966 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 11:53:51.969 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 11:53:52.083 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@1eba3867]
+2025-10-21 11:53:52.766 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 11:53:52.863 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 11:53:52.865 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@226f0379]
+2025-10-21 11:53:52.881 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 11:54:05.461 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/ai/chat
+2025-10-21 11:54:05.469 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/ai/chat
+2025-10-21 11:54:05.472 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 11:54:05.474 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/ai/chat
+2025-10-21 11:54:05.474 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/ai/chat", parameters={}
+2025-10-21 11:54:05.475 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chatWithAI(ChatRequest)
+2025-10-21 11:54:05.481 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [ChatRequest(message=hello, senderId=null, receiverId=null, content=null)]
+2025-10-21 11:54:05.677 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyALt1XKo1q0fyxPPiLFSQvqPqCeFd8ARAQ
+2025-10-21 11:54:05.685 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - Accept=[application/json, application/yaml, application/*+json]
+2025-10-21 11:54:05.689 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - Writing [{contents=[{parts=[{text=hello}]}]}] as "application/json"
+2025-10-21 11:54:15.863 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 11:54:15.867 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [ApiResponse(message=ok, data={reply=👋 Xin chào! Tôi là AI trợ lý y tế. Bạn cần hỗ trợ gì hôm nay?})]
+2025-10-21 11:54:15.872 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 11:55:51.317 [34mINFO [0;39m [SpringApplicationShutdownHook] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-21 11:55:51.492 [34mINFO [0;39m [tomcat-shutdown] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-10-21 11:55:51.501 [34mINFO [0;39m [SpringApplicationShutdownHook] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 11:55:51.507 [34mINFO [0;39m [SpringApplicationShutdownHook] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-10-21 11:55:51.514 [34mINFO [0;39m [SpringApplicationShutdownHook] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-10-21 11:56:08.063 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-21 11:56:08.151 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 11:56:08.152 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 11:56:08.154 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 11:56:08.249 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 11:56:08.249 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 11:56:10.127 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 11:56:10.265 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 121 ms. Found 4 JPA repository interfaces.
+2025-10-21 11:56:11.229 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 11:56:11.245 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 11:56:11.247 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 11:56:11.249 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 11:56:11.340 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 11:56:11.342 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3090 ms
+2025-10-21 11:56:11.765 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 11:56:11.859 [34mINFO [0;39m [restartedMain] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-21 11:56:11.914 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 11:56:12.349 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 11:56:12.409 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-21 11:56:12.710 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13953788
+2025-10-21 11:56:12.713 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-21 11:56:12.816 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 11:56:14.262 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 11:56:14.547 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 11:56:15.039 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 11:56:15.039 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 11:56:15.040 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 11:56:15.272 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 11:56:15.586 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 11:56:15.793 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 18 mappings in 'requestMappingHandlerMapping'
+2025-10-21 11:56:15.929 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 11:56:16.186 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 11:56:16.421 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 11:56:16.561 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 11:56:16.649 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 11:56:17.106 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 11:56:17.219 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 11:56:17.259 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 11:56:17.305 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 9.995 seconds (process running for 11.006)
+2025-10-21 11:56:19.667 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 11:56:19.669 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-21 11:56:19.670 [39mDEBUG[0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-21 11:56:19.670 [39mDEBUG[0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-21 11:56:19.670 [39mDEBUG[0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-21 11:56:19.672 [39mDEBUG[0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2ea74bb3
+2025-10-21 11:56:19.678 [39mDEBUG[0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d680b22
+2025-10-21 11:56:19.680 [39mDEBUG[0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-21 11:56:19.681 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 12 ms
+2025-10-21 11:56:49.771 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/ai/chat
+2025-10-21 11:56:49.908 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 11:56:49.918 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/ai/chat
+2025-10-21 11:56:49.928 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/ai/chat", parameters={}
+2025-10-21 11:56:49.948 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chatWithAI(ChatRequest)
+2025-10-21 11:56:50.044 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [ChatRequest(message=hello, senderId=null, receiverId=null, content=null)]
+2025-10-21 11:56:50.312 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyALt1XKo1q0fyxPPiLFSQvqPqCeFd8ARAQ
+2025-10-21 11:56:50.321 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - Accept=[application/json, application/yaml, application/*+json]
+2025-10-21 11:56:50.326 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - Writing [{contents=[{parts=[{text=hello}]}]}] as "application/json"
+2025-10-21 11:57:00.406 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 11:57:00.409 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [ApiResponse(message=ok, data={reply=👋 Xin chào! Tôi là AI trợ lý y tế. Bạn cần hỗ trợ gì hôm nay?})]
+2025-10-21 11:57:00.430 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:05:23.284 [34mINFO [0;39m [File Watcher] [36mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-21 12:05:23.297 [34mINFO [0;39m [Thread-5] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-21 12:05:23.301 [34mINFO [0;39m [tomcat-shutdown] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Pausing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:05:23.351 [34mINFO [0;39m [tomcat-shutdown] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-10-21 12:05:23.354 [34mINFO [0;39m [Thread-5] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Stopping ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:05:23.369 [34mINFO [0;39m [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:05:23.385 [34mINFO [0;39m [Thread-5] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-10-21 12:05:23.393 [34mINFO [0;39m [Thread-5] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-10-21 12:05:23.571 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:05:23.572 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:05:23.572 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:05:24.153 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:05:24.178 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:05:24.304 [31mWARN [0;39m [restartedMain] [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-21 12:05:24.318 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-21 12:05:24.356 [1;31mERROR[0;39m [restartedMain] [36mo.s.b.d.LoggingFailureAnalysisReporter[0;39m - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.servlet.encoding.charset' to java.nio.charset.Charset:
+
+    Property: server.servlet.encoding.charset
+    Value: "UTF-8 Chỉ cần phần này, đúng chuẩn Spring Boot 3.x"
+    Origin: class path resource [application.yml] - 7:16
+    Reason: failed to convert java.lang.String to java.nio.charset.Charset (caused by java.nio.charset.IllegalCharsetNameException: UTF-8 Chỉ cần phần này, đúng chuẩn Spring Boot 3.x)
+
+Action:
+
+Update your application's configuration
+
+2025-10-21 12:05:26.900 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:05:26.901 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:05:26.901 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:05:27.394 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:05:27.423 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:05:27.526 [31mWARN [0;39m [restartedMain] [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-21 12:05:27.536 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-21 12:05:27.542 [1;31mERROR[0;39m [restartedMain] [36mo.s.b.d.LoggingFailureAnalysisReporter[0;39m - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.servlet.encoding.charset' to java.nio.charset.Charset:
+
+    Property: server.servlet.encoding.charset
+    Value: "UTF-8  Chỉ cần phần này, đúng chuẩn Spring Boot 3.x"
+    Origin: class path resource [application.yml] - 7:16
+    Reason: failed to convert java.lang.String to java.nio.charset.Charset (caused by java.nio.charset.IllegalCharsetNameException: UTF-8  Chỉ cần phần này, đúng chuẩn Spring Boot 3.x)
+
+Action:
+
+Update your application's configuration
+
+2025-10-21 12:06:22.523 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:06:22.523 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:06:22.523 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:06:23.060 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:06:23.088 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:06:23.245 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 12:06:23.246 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:23.248 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 12:06:23.248 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 12:06:23.275 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 12:06:23.275 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 749 ms
+2025-10-21 12:06:23.340 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 12:06:23.344 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 12:06:23.364 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 12:06:23.366 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Starting...
+2025-10-21 12:06:23.428 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@407bad8f
+2025-10-21 12:06:23.429 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Start completed.
+2025-10-21 12:06:23.440 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 12:06:23.556 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 12:06:23.723 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:06:23.795 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 12:06:23.796 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 12:06:23.796 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 12:06:23.861 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 12:06:23.915 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 12:06:23.951 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 18 mappings in 'requestMappingHandlerMapping'
+2025-10-21 12:06:23.989 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 12:06:24.038 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 12:06:24.072 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 12:06:24.098 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 12:06:24.111 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 12:06:24.211 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 12:06:24.229 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:24.233 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 12:06:24.241 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 1.779 seconds (process running for 617.943)
+2025-10-21 12:06:24.339 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged
+2025-10-21 12:06:31.820 [34mINFO [0;39m [File Watcher] [36mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-21 12:06:31.822 [34mINFO [0;39m [Thread-7] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-21 12:06:31.823 [34mINFO [0;39m [tomcat-shutdown] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Pausing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:31.851 [34mINFO [0;39m [tomcat-shutdown] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-10-21 12:06:31.851 [34mINFO [0;39m [Thread-7] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Stopping ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:31.857 [34mINFO [0;39m [Thread-7] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:06:31.859 [34mINFO [0;39m [Thread-7] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Shutdown initiated...
+2025-10-21 12:06:31.861 [34mINFO [0;39m [Thread-7] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Shutdown completed.
+2025-10-21 12:06:31.983 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:06:31.985 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:06:31.986 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:06:32.450 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:06:32.476 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:06:32.615 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 12:06:32.616 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:32.617 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 12:06:32.617 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 12:06:32.652 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 12:06:32.653 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 665 ms
+2025-10-21 12:06:32.726 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 12:06:32.730 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 12:06:32.741 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 12:06:32.743 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-3 - Starting...
+2025-10-21 12:06:32.804 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@6cc418a3
+2025-10-21 12:06:32.804 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-3 - Start completed.
+2025-10-21 12:06:32.817 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 12:06:32.921 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 12:06:33.063 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:06:33.113 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 12:06:33.113 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 12:06:33.113 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 12:06:33.171 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 12:06:33.212 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 12:06:33.242 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 18 mappings in 'requestMappingHandlerMapping'
+2025-10-21 12:06:33.273 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 12:06:33.337 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 12:06:33.378 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 12:06:33.405 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 12:06:33.412 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 12:06:33.491 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 12:06:33.507 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:33.511 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 12:06:33.524 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 1.581 seconds (process running for 627.225)
+2025-10-21 12:06:33.623 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged
+2025-10-21 12:06:38.019 [34mINFO [0;39m [File Watcher] [36mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-21 12:06:38.023 [34mINFO [0;39m [Thread-17] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-21 12:06:38.024 [34mINFO [0;39m [tomcat-shutdown] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Pausing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:38.059 [34mINFO [0;39m [tomcat-shutdown] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-10-21 12:06:38.059 [34mINFO [0;39m [Thread-17] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Stopping ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:38.064 [34mINFO [0;39m [Thread-17] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:06:38.066 [34mINFO [0;39m [Thread-17] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-3 - Shutdown initiated...
+2025-10-21 12:06:38.073 [34mINFO [0;39m [Thread-17] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-3 - Shutdown completed.
+2025-10-21 12:06:38.191 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:06:38.191 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:06:38.192 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:06:38.580 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:06:38.602 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:06:38.728 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 12:06:38.729 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:38.730 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 12:06:38.730 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 12:06:38.752 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 12:06:38.753 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 560 ms
+2025-10-21 12:06:38.817 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 12:06:38.821 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 12:06:38.831 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 12:06:38.833 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-4 - Starting...
+2025-10-21 12:06:38.900 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@45b805d7
+2025-10-21 12:06:38.900 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-4 - Start completed.
+2025-10-21 12:06:38.911 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 12:06:39.012 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 12:06:39.167 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:06:39.216 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 12:06:39.218 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 12:06:39.219 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 12:06:39.300 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 12:06:39.361 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 12:06:39.389 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 18 mappings in 'requestMappingHandlerMapping'
+2025-10-21 12:06:39.417 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 12:06:39.468 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 12:06:39.501 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 12:06:39.528 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 12:06:39.540 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 12:06:39.628 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 12:06:39.651 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:06:39.654 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 12:06:39.662 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 1.515 seconds (process running for 633.363)
+2025-10-21 12:06:39.744 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged
+2025-10-21 12:12:24.032 [34mINFO [0;39m [File Watcher] [36mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-21 12:12:24.037 [34mINFO [0;39m [Thread-21] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-21 12:12:24.039 [34mINFO [0;39m [tomcat-shutdown] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Pausing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:12:24.080 [34mINFO [0;39m [tomcat-shutdown] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-10-21 12:12:24.081 [34mINFO [0;39m [Thread-21] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Stopping ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:12:24.085 [34mINFO [0;39m [Thread-21] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:12:24.086 [34mINFO [0;39m [Thread-21] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-4 - Shutdown initiated...
+2025-10-21 12:12:24.090 [34mINFO [0;39m [Thread-21] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-4 - Shutdown completed.
+2025-10-21 12:12:24.211 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19888 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:12:24.212 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:12:24.212 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:12:24.614 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:12:24.636 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:12:24.764 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 12:12:24.765 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:12:24.765 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 12:12:24.766 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 12:12:24.786 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 12:12:24.786 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 572 ms
+2025-10-21 12:12:24.860 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 12:12:24.864 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 12:12:24.875 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 12:12:24.877 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-5 - Starting...
+2025-10-21 12:12:24.934 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@6ef5b604
+2025-10-21 12:12:24.935 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-5 - Start completed.
+2025-10-21 12:12:24.945 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 12:12:25.042 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 12:12:25.194 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:12:25.267 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 12:12:25.267 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 12:12:25.268 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 12:12:25.341 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 12:12:25.403 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 12:12:25.433 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 18 mappings in 'requestMappingHandlerMapping'
+2025-10-21 12:12:25.463 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 12:12:25.496 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 12:12:25.537 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 12:12:25.569 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 12:12:25.577 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 12:12:25.648 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 12:12:25.663 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:12:25.666 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 12:12:25.675 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 1.508 seconds (process running for 979.376)
+2025-10-21 12:12:25.755 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged
+2025-10-21 12:28:58.183 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-21 12:28:58.267 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 13504 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 12:28:58.268 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 12:28:58.269 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 12:28:58.332 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 12:28:58.333 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 12:29:00.264 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 12:29:00.364 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 85 ms. Found 4 JPA repository interfaces.
+2025-10-21 12:29:01.252 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 12:29:01.270 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:29:01.272 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 12:29:01.273 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 12:29:01.386 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 12:29:01.386 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3052 ms
+2025-10-21 12:29:01.689 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 12:29:01.791 [34mINFO [0;39m [restartedMain] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-21 12:29:01.862 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 12:29:02.245 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 12:29:02.291 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-21 12:29:02.525 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3df033f
+2025-10-21 12:29:02.527 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-21 12:29:02.619 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 12:29:03.955 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 12:29:04.194 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 12:29:04.677 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 12:29:04.678 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 12:29:04.678 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 12:29:04.811 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 12:29:04.999 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 12:29:05.152 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 17 mappings in 'requestMappingHandlerMapping'
+2025-10-21 12:29:05.266 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 12:29:05.455 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 12:29:05.662 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 12:29:05.766 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 12:29:05.832 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 12:29:06.136 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 12:29:06.215 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 12:29:06.241 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 12:29:06.262 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 8.921 seconds (process running for 9.792)
+2025-10-21 12:29:06.480 [34mINFO [0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 12:29:06.481 [34mINFO [0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-21 12:29:06.482 [39mDEBUG[0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-21 12:29:06.482 [39mDEBUG[0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-21 12:29:06.483 [39mDEBUG[0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-21 12:29:06.484 [39mDEBUG[0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6be16e3a
+2025-10-21 12:29:06.485 [39mDEBUG[0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7955d4ad
+2025-10-21 12:29:06.486 [39mDEBUG[0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-21 12:29:06.486 [34mINFO [0;39m [RMI TCP Connection(2)-127.0.0.1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 4 ms
+2025-10-21 12:37:50.483 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-21 12:37:50.533 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:37:50.541 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:37:50.549 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:37:50.555 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:37:50.558 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:37:50.627 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@3690c705]
+2025-10-21 12:37:51.216 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 12:37:51.269 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:37:51.270 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@778fc586]
+2025-10-21 12:37:51.280 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:47:09.329 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:47:09.332 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:47:09.335 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:47:09.335 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:47:09.336 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:47:09.343 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@5194f48b]
+2025-10-21 12:47:09.791 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 12:47:09.794 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:47:09.795 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@79413bed]
+2025-10-21 12:47:09.798 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:49:14.446 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:49:14.448 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:49:14.449 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:49:14.450 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:49:14.450 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:49:14.452 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@6e2429c4]
+2025-10-21 12:49:14.566 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 12:49:14.569 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:49:14.569 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@1bc500a1]
+2025-10-21 12:49:14.572 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:49:41.272 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:49:41.275 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:49:41.277 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:49:41.280 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:49:41.283 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:49:41.289 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@3f74cd79]
+2025-10-21 12:49:41.749 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 12:49:41.752 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:49:41.753 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@40b300e4]
+2025-10-21 12:49:41.755 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:49:54.320 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/create-doctor
+2025-10-21 12:49:54.329 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/create-doctor
+2025-10-21 12:49:54.428 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.o.s.r.a.JwtAuthenticationProvider[0;39m - Authenticated token
+2025-10-21 12:49:54.431 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.o.s.r.w.a.BearerTokenAuthenticationFilter[0;39m - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@385e6e9d, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=172.20.10.6, SessionId=null], Granted Authorities=[ROLE_ADMIN]]
+2025-10-21 12:49:54.434 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/create-doctor
+2025-10-21 12:49:54.468 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/create-doctor", parameters={}
+2025-10-21 12:49:54.470 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+2025-10-21 12:49:54.486 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [Req[fullName=tran anh hai, username=123, password=132456]]
+2025-10-21 12:49:54.694 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:49:54.695 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Tạo bác sĩ thành công!, username=123, id=6, fullName=tran anh hai}]
+2025-10-21 12:49:54.697 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:50:02.943 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:50:02.945 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:50:02.946 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:50:02.946 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:50:02.947 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:50:02.949 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@478f3a73]
+2025-10-21 12:50:03.055 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user '123'
+2025-10-21 12:50:03.074 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:50:03.078 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:50:07.574 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:50:07.577 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:50:07.578 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:50:07.579 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:50:07.579 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:50:07.581 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@71f2de24]
+2025-10-21 12:50:07.692 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user '123'
+2025-10-21 12:50:07.693 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:50:07.695 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:50:12.944 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:50:12.946 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:50:12.947 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:50:12.948 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:50:12.949 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:50:12.951 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@480c5ce9]
+2025-10-21 12:50:13.059 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user '123'
+2025-10-21 12:50:13.059 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:50:13.061 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:50:19.063 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:50:19.065 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:50:19.066 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:50:19.067 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:50:19.067 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:50:19.069 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@2c9165ed]
+2025-10-21 12:50:19.181 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user '123'
+2025-10-21 12:50:19.182 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:50:19.183 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:51:16.724 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:51:16.726 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:51:16.727 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:51:16.727 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:51:16.728 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:51:16.730 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@527e9652]
+2025-10-21 12:51:17.139 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 12:51:17.143 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:51:17.143 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@b924b66]
+2025-10-21 12:51:17.144 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:51:27.758 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/create-doctor
+2025-10-21 12:51:27.761 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.s.o.s.r.a.JwtAuthenticationProvider[0;39m - Authenticated token
+2025-10-21 12:51:27.762 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.s.o.s.r.w.a.BearerTokenAuthenticationFilter[0;39m - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@2f90a585, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=172.20.10.6, SessionId=null], Granted Authorities=[ROLE_ADMIN]]
+2025-10-21 12:51:27.763 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/create-doctor
+2025-10-21 12:51:27.769 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/create-doctor", parameters={}
+2025-10-21 12:51:27.770 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+2025-10-21 12:51:27.773 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [Req[fullName=hai, username=456, password=123456]]
+2025-10-21 12:51:27.897 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:51:27.898 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Tạo bác sĩ thành công!, username=456, id=7, fullName=hai}]
+2025-10-21 12:51:27.900 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:51:38.495 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:51:38.497 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:51:38.498 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:51:38.499 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:51:38.499 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:51:38.501 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@1a5c1473]
+2025-10-21 12:51:38.614 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user '456'
+2025-10-21 12:51:38.615 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:51:38.616 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:53:18.676 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:53:18.678 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:53:18.680 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:53:18.680 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:53:18.681 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:53:18.684 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@219a5047]
+2025-10-21 12:53:19.150 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-21 12:53:19.153 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:53:19.154 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@3a846bb8]
+2025-10-21 12:53:19.156 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:53:34.092 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/create-nurse
+2025-10-21 12:53:34.098 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/create-nurse
+2025-10-21 12:53:34.101 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.o.s.r.a.JwtAuthenticationProvider[0;39m - Authenticated token
+2025-10-21 12:53:34.102 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.o.s.r.w.a.BearerTokenAuthenticationFilter[0;39m - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@eecb7a54, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=172.20.10.6, SessionId=null], Granted Authorities=[ROLE_ADMIN]]
+2025-10-21 12:53:34.103 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/create-nurse
+2025-10-21 12:53:34.108 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/create-nurse", parameters={}
+2025-10-21 12:53:34.109 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-21 12:53:34.112 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [Req[fullName=hai, username=hai, password=123456]]
+2025-10-21 12:53:34.240 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-21 12:53:34.241 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Tạo y tá thành công!, username=hai, id=3, fullName=hai}]
+2025-10-21 12:53:34.243 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-21 12:53:42.482 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:53:42.484 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:53:42.485 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:53:42.486 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:53:42.487 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:53:42.490 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@5d749be5]
+2025-10-21 12:53:42.604 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user 'hai'
+2025-10-21 12:53:42.605 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:53:42.607 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:57:50.282 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:57:50.284 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:57:50.286 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:57:50.287 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:57:50.288 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:57:50.289 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@65159acf]
+2025-10-21 12:57:50.399 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user 'hai'
+2025-10-21 12:57:50.400 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:57:50.401 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 12:57:53.061 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 12:57:53.064 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 12:57:53.066 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 12:57:53.067 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 12:57:53.069 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 12:57:53.071 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@3f12f7ab]
+2025-10-21 12:57:53.179 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user 'hai'
+2025-10-21 12:57:53.179 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 12:57:53.181 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 13:02:02.366 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-21 13:02:02.375 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 13:02:02.377 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-21 13:02:02.382 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-21 13:02:02.383 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-21 13:02:02.384 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-21 13:02:02.386 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [com.nckh.yte.dto.LoginRequest@31c79ee]
+2025-10-21 13:02:02.505 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to find user 'hai'
+2025-10-21 13:02:02.506 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.authentication.ProviderManager[0;39m - Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-10-21 13:02:02.507 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-21 13:04:02.614 [34mINFO [0;39m [File Watcher] [36mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-10-21 13:04:02.622 [34mINFO [0;39m [Thread-5] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-21 13:04:02.624 [34mINFO [0;39m [tomcat-shutdown] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Pausing ProtocolHandler ["http-nio-8081"]
+2025-10-21 13:04:02.666 [34mINFO [0;39m [tomcat-shutdown] [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-10-21 13:04:02.668 [34mINFO [0;39m [Thread-5] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Stopping ProtocolHandler ["http-nio-8081"]
+2025-10-21 13:04:02.679 [34mINFO [0;39m [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 13:04:02.690 [34mINFO [0;39m [Thread-5] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-10-21 13:04:02.698 [34mINFO [0;39m [Thread-5] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-10-21 13:04:02.851 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 13504 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-21 13:04:02.852 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-21 13:04:02.852 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 13:04:03.426 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 13:04:03.451 [34mINFO [0;39m [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2025-10-21 13:04:03.646 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8081 (http)
+2025-10-21 13:04:03.648 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-21 13:04:03.648 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-21 13:04:03.649 [34mINFO [0;39m [restartedMain] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-21 13:04:03.677 [34mINFO [0;39m [restartedMain] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-21 13:04:03.677 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 822 ms
+2025-10-21 13:04:03.766 [34mINFO [0;39m [restartedMain] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 13:04:03.774 [34mINFO [0;39m [restartedMain] [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-10-21 13:04:03.801 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 13:04:03.802 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Starting...
+2025-10-21 13:04:03.867 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5786cf09
+2025-10-21 13:04:03.868 [34mINFO [0;39m [restartedMain] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Start completed.
+2025-10-21 13:04:03.885 [34mINFO [0;39m [restartedMain] [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-21 13:04:03.993 [34mINFO [0;39m [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 13:04:04.147 [34mINFO [0;39m [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 13:04:04.205 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.f.ServerHttpObservationFilter[0;39m - Filter 'webMvcObservationFilter' configured for use
+2025-10-21 13:04:04.205 [39mDEBUG[0;39m [restartedMain] [36mo.s.web.filter.CorsFilter[0;39m - Filter 'corsFilter' configured for use
+2025-10-21 13:04:04.206 [39mDEBUG[0;39m [restartedMain] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-21 13:04:04.277 [34mINFO [0;39m [restartedMain] [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-21 13:04:04.320 [31mWARN [0;39m [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 13:04:04.352 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 17 mappings in 'requestMappingHandlerMapping'
+2025-10-21 13:04:04.378 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-21 13:04:04.433 [34mINFO [0;39m [restartedMain] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-21 13:04:04.464 [39mDEBUG[0;39m [restartedMain] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BearerTokenAuthenticationFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-10-21 13:04:04.495 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-21 13:04:04.502 [39mDEBUG[0;39m [restartedMain] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-21 13:04:04.570 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-10-21 13:04:04.586 [34mINFO [0;39m [restartedMain] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-21 13:04:04.590 [34mINFO [0;39m [restartedMain] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8081 (http) with context path '/'
+2025-10-21 13:04:04.598 [34mINFO [0;39m [restartedMain] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 1.803 seconds (process running for 2108.128)
+2025-10-21 13:04:04.673 [34mINFO [0;39m [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged
+2025-10-21 13:04:08.417 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 13:04:08.417 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-21 13:04:08.418 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-21 13:04:08.418 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-21 13:04:08.418 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-21 13:04:08.420 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@47abbead
+2025-10-21 13:04:08.421 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@431f2929
+2025-10-21 13:04:08.422 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-21 13:04:08.422 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 4 ms
+2025-10-21 13:04:08.424 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-21 13:04:08.426 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.cors.DefaultCorsProcessor[0;39m - Reject: 'http://localhost:52471' origin is not allowed

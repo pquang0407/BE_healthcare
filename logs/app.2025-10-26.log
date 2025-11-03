@@ -1,0 +1,979 @@
+2025-10-26 11:14:48.203 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-26 11:14:48.375 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19176 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-26 11:14:48.375 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-26 11:14:48.385 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 11:14:51.019 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-26 11:14:51.279 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 239 ms. Found 5 JPA repository interfaces.
+2025-10-26 11:14:52.654 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-26 11:14:52.678 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:14:52.681 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-26 11:14:52.684 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-26 11:14:53.108 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-26 11:14:53.110 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4603 ms
+2025-10-26 11:14:53.541 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-26 11:14:53.903 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-26 11:14:53.915 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-26 11:14:54.941 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:14:55.903 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-26 11:14:56.090 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-26 11:14:57.682 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@134d7ffa
+2025-10-26 11:14:57.688 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-26 11:14:58.770 [1;31mERROR[0;39m [main] [36mo.s.b.w.e.tomcat.TomcatStarter[0;39m - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter' defined in file [C:\Users\nhatn\java_project\yte\target\classes\com\nckh\yte\security\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userDetailsServiceImpl' defined in file [C:\Users\nhatn\java_project\yte\target\classes\com\nckh\yte\service\UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.nckh.yte.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2025-10-26 11:14:58.882 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Stopping service [Tomcat]
+2025-10-26 11:15:03.022 [31mWARN [0;39m [main] [36mo.a.c.loader.WebappClassLoaderBase[0;39m - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:842)
+2025-10-26 11:15:03.025 [31mWARN [0;39m [main] [36mo.a.c.loader.WebappClassLoaderBase[0;39m - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:842)
+2025-10-26 11:15:03.033 [31mWARN [0;39m [main] [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-26 11:15:03.034 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-10-26 11:15:03.041 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-10-26 11:15:03.068 [34mINFO [0;39m [main] [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-26 11:15:03.113 [1;31mERROR[0;39m [main] [36mo.s.boot.SpringApplication[0;39m - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.nckh.yte.YteApplication.main(YteApplication.java:10)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthFilter' defined in file [C:\Users\nhatn\java_project\yte\target\classes\com\nckh\yte\security\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userDetailsServiceImpl' defined in file [C:\Users\nhatn\java_project\yte\target\classes\com\nckh\yte\service\UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.nckh.yte.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl' defined in file [C:\Users\nhatn\java_project\yte\target\classes\com\nckh\yte\service\UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.nckh.yte.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:910)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.nckh.yte.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:910)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:688)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 82 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: com/nckh/yte/entity/Information$InformationBuilder
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 94 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/nckh/yte/entity/Information$InformationBuilder
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:137)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:175)
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:167)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:259)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:293)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:228)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:417)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:278)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:321)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 101 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.nckh.yte.entity.Information$InformationBuilder
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 125 common frames omitted
+2025-10-26 11:17:52.065 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-26 11:17:52.165 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 15680 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-26 11:17:52.170 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-26 11:17:52.175 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 11:17:53.294 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-26 11:17:53.485 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 121 ms. Found 5 JPA repository interfaces.
+2025-10-26 11:17:54.275 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-26 11:17:54.290 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:17:54.295 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-26 11:17:54.312 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-26 11:17:54.516 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-26 11:17:54.516 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 2281 ms
+2025-10-26 11:17:54.722 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-26 11:17:54.789 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-26 11:17:54.805 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-26 11:17:55.031 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:17:55.227 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-26 11:17:55.285 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-26 11:17:55.747 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6aa6c17
+2025-10-26 11:17:55.828 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-26 11:17:56.350 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:17:57.497 [34mINFO [0;39m [main] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-26 11:17:57.749 [31mWARN [0;39m [main] [36mo.h.e.jdbc.spi.SqlExceptionHelper[0;39m - SQL Warning Code: 0, SQLState: 00000
+2025-10-26 11:17:57.749 [31mWARN [0;39m [main] [36mo.h.e.jdbc.spi.SqlExceptionHelper[0;39m - constraint "uk_ku0vfhqotcdvy3xcx8t26xohx" of relation "information" does not exist, skipping
+2025-10-26 11:17:57.805 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-26 11:17:58.345 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-26 11:17:58.814 [31mWARN [0;39m [main] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-26 11:17:59.043 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 24 mappings in 'requestMappingHandlerMapping'
+2025-10-26 11:17:59.141 [39mDEBUG[0;39m [main] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-26 11:17:59.186 [34mINFO [0;39m [main] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e04c89d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e7dd504, org.springframework.security.web.context.SecurityContextHolderFilter@1e86b2d1, org.springframework.security.web.header.HeaderWriterFilter@5a3d52a0, org.springframework.web.filter.CorsFilter@3e5febe9, org.springframework.security.web.authentication.logout.LogoutFilter@2d6e09f0, com.nckh.yte.security.JwtAuthFilter@1822a61b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4865434e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4df8443f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5643052d, org.springframework.security.web.session.SessionManagementFilter@443b9ebb, org.springframework.security.web.access.ExceptionTranslationFilter@5ab70df7, org.springframework.security.web.access.intercept.AuthorizationFilter@21f421b8]
+2025-10-26 11:17:59.279 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-26 11:17:59.340 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-26 11:17:59.550 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:17:59.588 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 8081 (http) with context path ''
+2025-10-26 11:17:59.603 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 8.356 seconds (process running for 8.905)
+2025-10-26 11:19:31.865 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-26 11:19:31.865 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-26 11:19:31.865 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-26 11:19:31.865 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-26 11:19:31.865 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-26 11:19:31.878 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@103a1ad3
+2025-10-26 11:19:31.878 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e2ad1f2
+2025-10-26 11:19:31.878 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-26 11:19:31.878 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 13 ms
+2025-10-26 11:19:31.896 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/register
+2025-10-26 11:19:31.928 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/register
+2025-10-26 11:19:31.935 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:19:31.945 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#register(RegisterRequest)
+2025-10-26 11:19:31.951 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/register
+2025-10-26 11:19:31.955 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/register", parameters={}
+2025-10-26 11:19:31.955 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#register(RegisterRequest)
+2025-10-26 11:19:32.067 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.RegisterRequest@25da5c59]
+2025-10-26 11:19:32.366 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:19:32.368 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [ApiResponse(message=Registered successfully, data=29c1cd92-0028-4de8-8333-e424a6fa5b9a)]
+2025-10-26 11:19:32.384 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:19:42.179 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-26 11:19:42.183 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:19:42.185 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:19:42.186 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:19:42.190 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:19:42.191 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:19:42.191 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:19:42.195 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@67035136]
+2025-10-26 11:19:42.484 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:19:42.535 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:19:42.535 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@34c92394]
+2025-10-26 11:19:42.539 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:19:42.958 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users
+2025-10-26 11:19:42.970 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:19:43.048 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:19:43.049 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:19:43.050 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:19:43.050 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:19:43.051 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:19:43.053 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:19:43.053 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:19:43.054 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:19:43.071 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:19:43.072 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:19:43.075 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:20:17.130 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:20:17.132 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:20:17.133 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:20:17.134 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:20:17.134 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:20:17.135 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:20:17.138 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@7fb1bf2c]
+2025-10-26 11:20:17.290 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Failed to authenticate since password does not match stored value
+2025-10-26 11:20:17.298 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-10-26 11:20:17.299 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-26 11:20:17.317 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /error
+2025-10-26 11:20:17.318 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.319 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.321 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.322 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.324 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.324 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.327 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.329 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-26 11:20:17.329 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:20:17.330 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-26 11:20:20.642 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:20:20.643 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:20:20.644 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:20:20.644 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:20:20.646 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:20:20.646 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:20:20.648 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@dad25cf]
+2025-10-26 11:20:20.788 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:20:20.791 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:20:20.791 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@69fe9d47]
+2025-10-26 11:20:20.793 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:20:24.797 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/info/me
+2025-10-26 11:20:24.802 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:20:24.812 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.812 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.812 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.812 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.812 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.816 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.817 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.817 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.817 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:20:24.817 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:20:24.820 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:24.828 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [*/*]
+2025-10-26 11:20:24.828 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:20:40.994 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:20:41.006 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.008 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.010 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.011 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.011 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.012 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.013 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.013 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.015 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:20:41.015 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:20:41.016 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:20:41.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [*/*]
+2025-10-26 11:20:41.022 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:20:49.638 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/info/me
+2025-10-26 11:20:49.643 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/info/me
+2025-10-26 11:20:49.655 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.657 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.658 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.659 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.660 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.660 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.661 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.661 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.662 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/info/me
+2025-10-26 11:20:49.662 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/info/me", parameters={}
+2025-10-26 11:20:49.662 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:20:49.673 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [InfoRequest[fullName=nguyen le hieu, birthday=2005-01-28, sex=MALE]]
+2025-10-26 11:20:49.717 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:20:49.717 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Đã lưu thông tin}]
+2025-10-26 11:20:49.719 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:12.619 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:21:12.621 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:21:12.621 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:21:12.621 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:21:12.623 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:21:12.623 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:21:12.624 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@3d0d19a5]
+2025-10-26 11:21:12.786 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:21:12.788 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:21:12.789 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@25f453a4]
+2025-10-26 11:21:12.790 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:13.054 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:21:13.066 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:13.067 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:13.074 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:13.078 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:13.078 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:13.079 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:21:13.079 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:21:13.080 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:13.094 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:21:13.124 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:21:13.127 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:21.002 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password
+2025-10-26 11:21:21.006 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password
+2025-10-26 11:21:21.019 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:21:21.020 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:21:21.021 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:21:21.022 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:21:21.024 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:21:21.026 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password
+2025-10-26 11:21:21.027 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password", parameters={}
+2025-10-26 11:21:21.028 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:21:21.036 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [{newPassword=1234556}]
+2025-10-26 11:21:21.194 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:21:21.194 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=✅ Đổi mật khẩu thành công cho dodainhan, changedAt=2025-10-26T04:21:21.193887100Z}]
+2025-10-26 11:21:21.197 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:21.206 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:21:21.221 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:21.223 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:21.224 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:21.225 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:21.226 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:21.227 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:21:21.227 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:21:21.228 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:21:21.245 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:21:21.246 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:21:21.248 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:33.138 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:21:33.139 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:21:33.141 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:21:33.141 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:21:33.142 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:21:33.142 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:21:33.143 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@4f89714a]
+2025-10-26 11:21:33.283 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:21:33.286 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:21:33.286 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@8402fa6]
+2025-10-26 11:21:33.288 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:35.097 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:21:35.111 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.113 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.114 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.115 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.115 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.116 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.118 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.119 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.121 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:21:35.122 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:21:35.123 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:21:35.129 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [*/*]
+2025-10-26 11:21:35.130 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:21:43.734 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/info/me
+2025-10-26 11:21:43.744 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.745 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.746 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.746 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.747 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.747 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.748 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.749 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.749 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/info/me
+2025-10-26 11:21:43.750 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/info/me", parameters={}
+2025-10-26 11:21:43.750 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:21:43.753 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [InfoRequest[fullName=đỗ đằng thành, birthday=2005-01-31, sex=MALE]]
+2025-10-26 11:21:43.775 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:21:43.775 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Đã lưu thông tin}]
+2025-10-26 11:21:43.778 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:26:51.150 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:26:51.163 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:26:51.166 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:26:51.166 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:26:51.166 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:26:51.166 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:26:51.170 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@607313bf]
+2025-10-26 11:26:51.403 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:26:51.406 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:26:51.406 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@3a973d74]
+2025-10-26 11:26:51.412 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:26:51.688 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:26:51.745 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:26:51.748 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:26:51.750 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:26:51.751 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:26:51.752 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:26:51.752 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:26:51.752 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:26:51.753 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:26:51.772 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:26:51.773 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:26:51.775 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:28:02.097 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/create-nurse
+2025-10-26 11:28:02.101 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/create-nurse
+2025-10-26 11:28:02.116 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-26 11:28:02.118 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-26 11:28:02.118 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-26 11:28:02.119 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-26 11:28:02.119 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-26 11:28:02.120 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/create-nurse
+2025-10-26 11:28:02.120 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/create-nurse", parameters={}
+2025-10-26 11:28:02.121 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminNurseController#createNurse(Req)
+2025-10-26 11:28:02.126 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [Req[fullName=lê như lời, username=leloi, password=1234566]]
+2025-10-26 11:28:02.360 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:28:02.360 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Tạo y tá thành công!, username=leloi, id=9, fullName=lê như lời}]
+2025-10-26 11:28:02.363 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:28:04.598 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:28:04.614 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:28:04.617 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:28:04.617 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:28:04.617 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:28:04.617 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:28:04.617 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:28:04.617 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:28:04.622 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:28:04.639 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:28:04.639 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:28:04.639 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:48:54.987 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-26 11:48:55.824 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 20496 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-26 11:48:55.831 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-26 11:48:55.835 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 11:48:59.626 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-26 11:48:59.943 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 288 ms. Found 5 JPA repository interfaces.
+2025-10-26 11:49:03.613 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-26 11:49:03.667 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:49:03.707 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-26 11:49:03.719 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-26 11:49:04.500 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-26 11:49:04.506 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 8497 ms
+2025-10-26 11:49:05.236 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-26 11:49:05.563 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-26 11:49:05.580 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-26 11:49:06.576 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:49:07.449 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-26 11:49:07.554 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-26 11:49:08.813 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36525ab
+2025-10-26 11:49:08.824 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-26 11:49:10.981 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:49:19.147 [34mINFO [0;39m [main] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-26 11:49:19.777 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-26 11:49:21.742 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-26 11:49:23.030 [31mWARN [0;39m [main] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-26 11:49:23.418 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 24 mappings in 'requestMappingHandlerMapping'
+2025-10-26 11:49:23.649 [39mDEBUG[0;39m [main] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-26 11:49:23.772 [34mINFO [0;39m [main] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e3bc13b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c989d82, org.springframework.security.web.context.SecurityContextHolderFilter@4830c979, org.springframework.security.web.header.HeaderWriterFilter@5ab70df7, org.springframework.web.filter.CorsFilter@2e04c89d, org.springframework.security.web.authentication.logout.LogoutFilter@2740585b, com.nckh.yte.security.JwtAuthFilter@65b69ccb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e86b2d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@287dde94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e7dd504, org.springframework.security.web.session.SessionManagementFilter@4db10b9f, org.springframework.security.web.access.ExceptionTranslationFilter@2fb24ad8, org.springframework.security.web.access.intercept.AuthorizationFilter@506654fa]
+2025-10-26 11:49:23.917 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-26 11:49:24.020 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-26 11:49:24.496 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:49:24.557 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 8081 (http) with context path ''
+2025-10-26 11:49:24.587 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 32.525 seconds (process running for 33.967)
+2025-10-26 11:50:39.961 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-26 11:50:39.961 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-26 11:50:39.961 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-26 11:50:39.961 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-26 11:50:39.961 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-26 11:50:39.969 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@623c9988
+2025-10-26 11:50:39.970 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@701996e9
+2025-10-26 11:50:39.970 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-26 11:50:39.970 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 9 ms
+2025-10-26 11:50:39.985 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-26 11:50:40.019 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:50:40.025 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:50:40.033 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:50:40.033 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:50:40.040 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:50:40.041 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:50:40.150 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@30448171]
+2025-10-26 11:50:40.420 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:50:40.512 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:50:40.513 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@12692b99]
+2025-10-26 11:50:40.521 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:50:41.027 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users
+2025-10-26 11:50:41.032 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:50:41.080 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:41.080 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:41.081 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:41.081 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:41.082 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:41.083 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:50:41.083 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:50:41.084 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:41.102 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:50:41.104 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:50:41.108 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:50:50.961 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:50:50.975 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:50.978 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:50.980 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:50.980 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:50.980 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:50.981 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:50:50.981 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:50:50.981 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:50.995 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:50:50.995 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:50:50.997 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:50:55.755 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users/29c1cd92-0028-4de8-8333-e424a6fa5b9a/reset-password
+2025-10-26 11:50:55.759 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/users/29c1cd92-0028-4de8-8333-e424a6fa5b9a/reset-password
+2025-10-26 11:50:55.773 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:50:55.773 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:50:55.774 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:50:55.775 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:50:55.776 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:50:55.776 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/users/29c1cd92-0028-4de8-8333-e424a6fa5b9a/reset-password
+2025-10-26 11:50:55.776 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/users/29c1cd92-0028-4de8-8333-e424a6fa5b9a/reset-password", parameters={}
+2025-10-26 11:50:55.777 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:50:55.784 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [{newPassword=123456}]
+2025-10-26 11:50:56.060 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:50:56.060 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=✅ Đổi mật khẩu thành công cho hieu thu tu, changedAt=2025-10-26T04:50:56.060466600Z}]
+2025-10-26 11:50:56.066 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:50:56.075 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:50:56.095 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:56.100 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:56.100 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:56.100 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:56.100 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:56.105 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:50:56.105 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:50:56.105 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:50:56.124 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:50:56.124 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:50:56.124 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:02.705 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password
+2025-10-26 11:51:02.710 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password
+2025-10-26 11:51:02.721 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:02.723 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:02.724 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:02.724 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:02.725 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:02.725 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password
+2025-10-26 11:51:02.725 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/users/cfbc62b6-34d3-4c99-bc7b-46c26442da42/reset-password", parameters={}
+2025-10-26 11:51:02.726 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:02.727 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [{newPassword=123456}]
+2025-10-26 11:51:02.873 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:02.874 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=✅ Đổi mật khẩu thành công cho dodainhan, changedAt=2025-10-26T04:51:02.872172900Z}]
+2025-10-26 11:51:02.875 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:02.897 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:51:02.906 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:02.906 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:02.907 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:02.907 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:02.908 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:02.908 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:51:02.908 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:51:02.908 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:02.921 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:02.923 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:51:02.924 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:06.827 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users/19377272-9705-41c6-8abf-3d58eb25fdbd/reset-password
+2025-10-26 11:51:06.831 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/admin/users/19377272-9705-41c6-8abf-3d58eb25fdbd/reset-password
+2025-10-26 11:51:06.841 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:06.842 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:06.844 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:06.845 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:06.846 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:06.847 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/admin/users/19377272-9705-41c6-8abf-3d58eb25fdbd/reset-password
+2025-10-26 11:51:06.848 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/admin/users/19377272-9705-41c6-8abf-3d58eb25fdbd/reset-password", parameters={}
+2025-10-26 11:51:06.848 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#resetPassword(UUID, Map)
+2025-10-26 11:51:06.850 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [{newPassword=123456}]
+2025-10-26 11:51:06.995 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:06.996 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=✅ Đổi mật khẩu thành công cho leloi, changedAt=2025-10-26T04:51:06.995148300Z}]
+2025-10-26 11:51:06.998 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:07.024 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-26 11:51:07.036 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:07.038 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:07.038 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:07.039 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:07.039 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:07.039 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-26 11:51:07.039 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-26 11:51:07.040 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-26 11:51:07.053 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:07.064 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=16c99b45-1775-44bf-8107-b0faf4abd4f1, fullName=System Administrator, username=admin, password=h (truncated)...]
+2025-10-26 11:51:07.066 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:16.599 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:51:16.600 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:51:16.601 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:51:16.601 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:51:16.602 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:51:16.603 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:51:16.605 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@5298ac35]
+2025-10-26 11:51:16.776 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:51:16.778 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:16.778 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@65d64783]
+2025-10-26 11:51:16.780 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:19.583 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/info/me
+2025-10-26 11:51:19.591 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:51:19.607 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.610 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.610 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.610 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.610 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.610 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.615 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.617 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.617 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:51:19.617 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:51:19.617 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:19.650 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [*/*]
+2025-10-26 11:51:19.650 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:38.000 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/info/me
+2025-10-26 11:51:38.001 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/info/me
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/info/me
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/info/me", parameters={}
+2025-10-26 11:51:38.021 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:38.044 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [InfoRequest[fullName=lê như lời, birthday=2005-01-02, sex=FEMALE, department=Khoa Sản]]
+2025-10-26 11:51:38.100 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:51:38.100 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Đã lưu thông tin}]
+2025-10-26 11:51:38.100 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:41.458 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:51:41.468 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.468 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.469 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.469 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.470 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.471 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.471 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.472 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.472 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:51:41.472 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:51:41.473 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:41.488 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:41.497 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [Information(id=3, user=com.nckh.yte.entity.User@1f0dfe42, fullName=lê như lời, role=NURSE, birthday= (truncated)...]
+2025-10-26 11:51:41.501 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:46.203 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:51:46.219 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.220 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.220 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.221 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.221 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.221 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.222 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.222 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.223 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:51:46.223 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:51:46.224 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:51:46.231 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:51:46.231 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [Information(id=3, user=com.nckh.yte.entity.User@53a1b3e7, fullName=lê như lời, role=NURSE, birthday= (truncated)...]
+2025-10-26 11:51:46.233 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:51:49.538 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/info/me
+2025-10-26 11:51:49.548 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.548 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.549 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.550 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.550 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.551 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.551 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.552 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.552 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/info/me
+2025-10-26 11:51:49.552 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/info/me", parameters={}
+2025-10-26 11:51:49.552 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:51:49.555 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [InfoRequest[fullName=lê như lời, birthday=2005-01-02, sex=FEMALE, department=Khoa Sản]]
+2025-10-26 11:51:49.567 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:51:49.567 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Đã lưu thông tin}]
+2025-10-26 11:51:49.569 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:52:07.075 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:52:07.075 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:52:07.075 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:52:07.075 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:52:07.075 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:52:07.075 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:52:07.080 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@2dec05da]
+2025-10-26 11:52:07.215 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:52:07.215 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:52:07.215 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@35517188]
+2025-10-26 11:52:07.220 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:52:08.614 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:52:08.628 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.632 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.634 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.635 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.636 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.637 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.638 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.639 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.640 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:52:08.640 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:52:08.642 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:08.668 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:52:08.669 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [Information(id=2, user=com.nckh.yte.entity.User@4bfbb44e, fullName=đỗ đằng thành, role=DOCTOR, birth (truncated)...]
+2025-10-26 11:52:08.670 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:52:21.002 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/info/me
+2025-10-26 11:52:21.014 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.015 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.016 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.017 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.017 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.017 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.018 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.018 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.018 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/info/me
+2025-10-26 11:52:21.018 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/info/me", parameters={}
+2025-10-26 11:52:21.019 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:21.020 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [InfoRequest[fullName=đỗ đằng thành, birthday=2005-02-02, sex=MALE, department=Khoa Da Liễu]]
+2025-10-26 11:52:21.050 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:52:21.050 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Đã lưu thông tin}]
+2025-10-26 11:52:21.051 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:52:39.717 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:52:39.719 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:52:39.719 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:52:39.720 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:52:39.720 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:52:39.721 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:52:39.722 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@20fcbbe7]
+2025-10-26 11:52:39.857 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:52:39.860 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:52:39.861 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@352d869a]
+2025-10-26 11:52:39.862 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:52:41.547 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:52:41.564 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.565 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.567 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.569 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.570 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.571 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.572 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.573 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.574 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:52:41.574 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:52:41.575 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:52:41.588 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:52:41.589 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [Information(id=1, user=com.nckh.yte.entity.User@1f2dcbb9, fullName=nguyen le hieu, role=PATIENT, bir (truncated)...]
+2025-10-26 11:52:41.591 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:52:56.548 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/info/me
+2025-10-26 11:52:56.560 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.561 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.561 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.561 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.563 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.563 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.564 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.564 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.565 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/info/me
+2025-10-26 11:52:56.565 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/info/me", parameters={}
+2025-10-26 11:52:56.565 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#upsertMyInfo(InfoRequest, UserDetailsImpl)
+2025-10-26 11:52:56.567 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=utf-8" to [InfoRequest[fullName=nguyen le hieu, birthday=2014-01-29, sex=MALE, department=Khoa Sản]]
+2025-10-26 11:52:56.590 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-26 11:52:56.591 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{message=Đã lưu thông tin}]
+2025-10-26 11:52:56.593 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:53:33.163 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:53:33.164 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:53:33.164 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:53:33.165 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:53:33.165 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:53:33.166 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:53:33.167 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@3aac620d]
+2025-10-26 11:53:33.303 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:53:33.307 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:53:33.307 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@2aca8440]
+2025-10-26 11:53:33.309 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:53:34.332 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:53:34.343 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.344 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.344 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.345 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.345 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.346 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.346 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.346 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.348 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:53:34.348 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:53:34.348 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:34.356 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:53:34.357 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [Information(id=2, user=com.nckh.yte.entity.User@44f8a88b, fullName=đỗ đằng thành, role=DOCTOR, birth (truncated)...]
+2025-10-26 11:53:34.359 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:53:49.307 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 11:53:49.308 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 11:53:49.309 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:53:49.309 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 11:53:49.310 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 11:53:49.310 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 11:53:49.312 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@62b54c3f]
+2025-10-26 11:53:49.530 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 11:53:49.533 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:53:49.533 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@180c9375]
+2025-10-26 11:53:49.534 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:53:50.658 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/info/me
+2025-10-26 11:53:50.668 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.669 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.669 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.669 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.670 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.671 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.671 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.672 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.672 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/info/me
+2025-10-26 11:53:50.673 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/info/me", parameters={}
+2025-10-26 11:53:50.673 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.InfoController#getMyInfo(UserDetailsImpl)
+2025-10-26 11:53:50.679 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 11:53:50.680 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [Information(id=3, user=com.nckh.yte.entity.User@529a3b10, fullName=lê như lời, role=NURSE, birthday= (truncated)...]
+2025-10-26 11:53:50.681 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 11:58:47.054 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-26 11:58:47.130 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 13744 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-26 11:58:47.131 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-26 11:58:47.133 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 11:58:48.618 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-26 11:58:48.740 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 111 ms. Found 5 JPA repository interfaces.
+2025-10-26 11:58:50.090 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-26 11:58:50.108 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:58:50.113 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-26 11:58:50.114 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-26 11:58:50.309 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-26 11:58:50.309 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3122 ms
+2025-10-26 11:58:50.579 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-26 11:58:50.736 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-26 11:58:50.743 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-26 11:58:51.061 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:58:51.321 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-26 11:58:51.351 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-26 11:58:51.699 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1640f20f
+2025-10-26 11:58:51.703 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-26 11:58:52.248 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-26 11:58:53.665 [34mINFO [0;39m [main] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-26 11:58:53.875 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-26 11:58:54.438 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-26 11:58:55.000 [31mWARN [0;39m [main] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-26 11:58:55.332 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 24 mappings in 'requestMappingHandlerMapping'
+2025-10-26 11:58:55.450 [39mDEBUG[0;39m [main] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-26 11:58:55.500 [34mINFO [0;39m [main] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@af04d6d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2740585b, org.springframework.security.web.context.SecurityContextHolderFilter@5ab70df7, org.springframework.security.web.header.HeaderWriterFilter@cda988, org.springframework.web.filter.CorsFilter@3816efab, org.springframework.security.web.authentication.logout.LogoutFilter@1415f18d, com.nckh.yte.security.JwtAuthFilter@4d682397, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a3d52a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e8f3b76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d6e09f0, org.springframework.security.web.session.SessionManagementFilter@72e9f0f7, org.springframework.security.web.access.ExceptionTranslationFilter@7d31fb6c, org.springframework.security.web.access.intercept.AuthorizationFilter@1d160161]
+2025-10-26 11:58:55.589 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-26 11:58:55.649 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-26 11:58:55.916 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-26 11:58:55.946 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 8081 (http) with context path ''
+2025-10-26 11:58:55.964 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 9.844 seconds (process running for 10.464)
+2025-10-26 12:00:00.223 [34mINFO [0;39m [http-nio-8081-exec-4] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-26 12:00:00.224 [34mINFO [0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-26 12:00:00.225 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-26 12:00:00.226 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-26 12:00:00.226 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-26 12:00:00.230 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@63767d
+2025-10-26 12:00:00.232 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@253379ec
+2025-10-26 12:00:00.234 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-26 12:00:00.234 [34mINFO [0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 9 ms
+2025-10-26 12:00:00.251 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-26 12:00:00.308 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-26 12:00:00.319 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 12:00:00.337 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 12:00:00.339 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-26 12:00:00.344 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-26 12:00:00.349 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-26 12:00:00.514 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@1e88ee7c]
+2025-10-26 12:00:01.012 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-26 12:00:01.143 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 12:00:01.146 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@6cff609f]
+2025-10-26 12:00:01.161 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-26 12:00:22.152 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/ai/chat
+2025-10-26 12:00:22.159 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/ai/chat
+2025-10-26 12:00:22.162 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-26 12:00:22.163 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-26 12:00:22.164 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-26 12:00:22.165 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/ai/chat
+2025-10-26 12:00:22.166 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/ai/chat", parameters={}
+2025-10-26 12:00:22.166 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-26 12:00:22.179 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [{message=tôi có vấn đề về hô hấp, tôi nên khám ở khoa nào, userId=nguyen le hieu}]
+2025-10-26 12:00:22.442 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.client.RestTemplate[0;39m - HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyALt1XKo1q0fyxPPiLFSQvqPqCeFd8ARAQ
+2025-10-26 12:00:22.455 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.client.RestTemplate[0;39m - Accept=[application/json, application/*+json]
+2025-10-26 12:00:22.459 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.client.RestTemplate[0;39m - Writing [{systemInstruction={parts=[{text=    Bạn là Bác sĩ AI phong cách Gen Z. Xưng hô “mình – bạn”, nói chuyện thân thiện như hai người bạn.
+
+    Mục tiêu: tư vấn sức khỏe thân thiện và có thể GỢI Ý THUỐC OTC (không cần toa) khi phù hợp.
+    Được phép gợi ý nhóm thuốc thông dụng: giảm đau/hạ sốt (paracetamol), kháng viêm không steroid (ibuprofen),
+    thuốc nhỏ/xịt mũi co mạch ngắn hạn, nước muối sinh lý, siro ho/long đờm, thuốc dị ứng (kháng histamine),
+    men vi sinh, bôi ngoài da nhẹ (hydrocortisone 1%, kẽm oxide), thuốc chống say tàu xe OTC, vitamin/khoáng.
+
+    KHÔNG gợi ý hoặc kê: kháng sinh, thuốc corticoid đường uống/tiêm, thuốc tim mạch, thuốc hạ đường huyết,
+    thuốc chống động kinh, thuốc an thần/benzodiazepine, thuốc gây nghiện/kiểm soát đặc biệt, thuốc kê đơn nói chung.
+
+    Khi nói về thuốc:
+    - Trình bày ngắn gọn công dụng + liều dùng cơ bản người lớn (nếu an toàn), kèm cảnh báo TDP thường gặp.
+    - Tránh nêu liều cho TRẺ EM, PNCT/cho bú, người có bệnh nền nặng; trong các trường hợp này chỉ nói nguyên tắc an toàn
+      và đề nghị hỏi dược sĩ/bác sĩ để chỉnh liều theo cân nặng/ tình trạng.
+    - Luôn thêm câu: “Hãy đọc kỹ hướng dẫn sử dụng và hỏi dược sĩ/bác sĩ nếu không chắc chắn.”
+
+    Phong cách:
+    - Câu ngắn, dễ hiểu, 1–2 emoji phù hợp.
+    - Tôn trọng, tích cực, tránh thuật ngữ khó.
+    - Nếu thông tin thiếu, chỉ hỏi bù TỐI ĐA 1–2 câu, tránh hỏi dồn dập.
+
+    Cấu trúc trả lời (nếu phù hợp):
+    1) Nguyên nhân có thể
+    2) Thuốc OTC & cách xử lý tại nhà (nêu tên hoạt chất + liều cơ bản người lớn nếu an toàn, kèm cảnh báo)
+    3) Khi nào cần gặp bác sĩ
+    4) Lưu ý quan trọng
+
+    Nhắc đi khám ngay nếu có dấu hiệu nguy hiểm: khó thở tăng dần, đau ngực dữ dội, sốt cao kéo dài,
+    yếu liệt/nói khó, lơ mơ, nôn ói không cầm, chảy máu không cầm, SpO₂ thấp, dị ứng nặng/khó thở, đau bụng dữ dội kèm bụng cứng.
+}]}, contents=[{parts=[{text=Triệu chứng/ câu hỏi về thuốc (xưng hô mình–bạn): tôi có vấn đề về hô hấp, tôi nên khám ở khoa nào}], role=user}], generationConfig={maxOutputTokens=800, topP=0.9, temperature=0.6}}] as "application/json"
+2025-10-26 12:00:27.630 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.client.RestTemplate[0;39m - Response 200 OK
+2025-10-26 12:00:27.633 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.client.RestTemplate[0;39m - Reading to [java.util.Map<?, ?>]
+2025-10-26 12:00:27.680 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-26 12:00:27.682 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{candidates=[{content={parts=[{text=Chào bạn, mình là Bác sĩ AI đây. Về vấn đề hô hấp của bạn, để mì (truncated)...]
+2025-10-26 12:00:27.689 [39mDEBUG[0;39m [http-nio-8081-exec-2] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK

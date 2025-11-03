@@ -1,0 +1,583 @@
+2025-10-24 19:23:11.939 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-24 19:23:12.090 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 2080 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-24 19:23:12.093 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-24 19:23:12.096 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-24 19:23:14.402 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-24 19:23:14.617 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 159 ms. Found 4 JPA repository interfaces.
+2025-10-24 19:23:16.187 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-24 19:23:16.239 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-24 19:23:16.261 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-24 19:23:16.265 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-24 19:23:16.513 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-24 19:23:16.534 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4283 ms
+2025-10-24 19:23:16.885 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-24 19:23:17.038 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-24 19:23:17.114 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-24 19:23:17.541 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-24 19:23:19.677 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-24 19:23:19.922 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-24 19:23:22.145 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f106af8
+2025-10-24 19:23:22.162 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-24 19:23:26.008 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-24 19:23:29.343 [34mINFO [0;39m [main] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-24 19:23:29.733 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 19:23:31.458 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-24 19:23:33.559 [31mWARN [0;39m [main] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-24 19:23:34.238 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 20 mappings in 'requestMappingHandlerMapping'
+2025-10-24 19:23:34.637 [39mDEBUG[0;39m [main] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-24 19:23:34.933 [34mINFO [0;39m [main] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d48299e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17810908, org.springframework.security.web.context.SecurityContextHolderFilter@76055d02, org.springframework.security.web.header.HeaderWriterFilter@3b8c15de, org.springframework.web.filter.CorsFilter@174d5cf7, org.springframework.security.web.authentication.logout.LogoutFilter@4ebd0b52, com.nckh.yte.security.JwtAuthFilter@78c5ef58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@130ad58d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ce5a2ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@597eb9ac, org.springframework.security.web.session.SessionManagementFilter@7ec729be, org.springframework.security.web.access.ExceptionTranslationFilter@24ccc91b, org.springframework.security.web.access.intercept.AuthorizationFilter@5e8684a3]
+2025-10-24 19:23:35.542 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-24 19:23:35.773 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-24 19:23:36.587 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-24 19:23:36.784 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 8081 (http) with context path ''
+2025-10-24 19:23:36.833 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 25.926 seconds (process running for 27.123)
+2025-10-24 19:24:44.053 [34mINFO [0;39m [http-nio-8081-exec-8] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-24 19:24:44.054 [34mINFO [0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-24 19:24:44.054 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-24 19:24:44.054 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-24 19:24:44.054 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-24 19:24:44.056 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f1ea463
+2025-10-24 19:24:44.057 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3ed3e66d
+2025-10-24 19:24:44.057 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-24 19:24:44.058 [34mINFO [0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 4 ms
+2025-10-24 19:24:44.067 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-24 19:24:44.093 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-24 19:24:44.097 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:24:44.105 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-24 19:24:44.107 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-24 19:24:44.110 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-24 19:24:44.112 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-24 19:24:44.190 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@2ca53fbe]
+2025-10-24 19:24:44.683 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-24 19:24:44.736 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:24:44.736 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@55e91fed]
+2025-10-24 19:24:44.736 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:25:12.462 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/ai/chat
+2025-10-24 19:25:12.465 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/ai/chat
+2025-10-24 19:25:12.467 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:25:12.467 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:25:12.468 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:25:12.468 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/ai/chat
+2025-10-24 19:25:12.468 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/ai/chat", parameters={}
+2025-10-24 19:25:12.469 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:25:12.474 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [{message=tôi mang thai 7 tháng xuất hiện vết thương nhỏ khoảng 3mm ở vùng đùi thì nên lưu ý những gì (truncated)...]
+2025-10-24 19:25:12.609 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyALt1XKo1q0fyxPPiLFSQvqPqCeFd8ARAQ
+2025-10-24 19:25:12.613 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - Accept=[application/json, application/*+json]
+2025-10-24 19:25:12.615 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - Writing [{generationConfig={maxOutputTokens=800, topP=0.9, temperature=0.6}, systemInstruction={parts=[{text=    Bạn là Bác sĩ AI phong cách Gen Z. Xưng hô “mình – bạn”, nói chuyện thân thiện như hai người bạn.
+
+    Mục tiêu: tư vấn sức khỏe thân thiện và có thể GỢI Ý THUỐC OTC (không cần toa) khi phù hợp.
+    Được phép gợi ý nhóm thuốc thông dụng: giảm đau/hạ sốt (paracetamol), kháng viêm không steroid (ibuprofen),
+    thuốc nhỏ/xịt mũi co mạch ngắn hạn, nước muối sinh lý, siro ho/long đờm, thuốc dị ứng (kháng histamine),
+    men vi sinh, bôi ngoài da nhẹ (hydrocortisone 1%, kẽm oxide), thuốc chống say tàu xe OTC, vitamin/khoáng.
+
+    KHÔNG gợi ý hoặc kê: kháng sinh, thuốc corticoid đường uống/tiêm, thuốc tim mạch, thuốc hạ đường huyết,
+    thuốc chống động kinh, thuốc an thần/benzodiazepine, thuốc gây nghiện/kiểm soát đặc biệt, thuốc kê đơn nói chung.
+
+    Khi nói về thuốc:
+    - Trình bày ngắn gọn công dụng + liều dùng cơ bản người lớn (nếu an toàn), kèm cảnh báo TDP thường gặp.
+    - Tránh nêu liều cho TRẺ EM, PNCT/cho bú, người có bệnh nền nặng; trong các trường hợp này chỉ nói nguyên tắc an toàn
+      và đề nghị hỏi dược sĩ/bác sĩ để chỉnh liều theo cân nặng/ tình trạng.
+    - Luôn thêm câu: “Hãy đọc kỹ hướng dẫn sử dụng và hỏi dược sĩ/bác sĩ nếu không chắc chắn.”
+
+    Phong cách:
+    - Câu ngắn, dễ hiểu, 1–2 emoji phù hợp.
+    - Tôn trọng, tích cực, tránh thuật ngữ khó.
+    - Nếu thông tin thiếu, chỉ hỏi bù TỐI ĐA 1–2 câu, tránh hỏi dồn dập.
+
+    Cấu trúc trả lời (nếu phù hợp):
+    1) Nguyên nhân có thể
+    2) Thuốc OTC & cách xử lý tại nhà (nêu tên hoạt chất + liều cơ bản người lớn nếu an toàn, kèm cảnh báo)
+    3) Khi nào cần gặp bác sĩ
+    4) Lưu ý quan trọng
+
+    Nhắc đi khám ngay nếu có dấu hiệu nguy hiểm: khó thở tăng dần, đau ngực dữ dội, sốt cao kéo dài,
+    yếu liệt/nói khó, lơ mơ, nôn ói không cầm, chảy máu không cầm, SpO₂ thấp, dị ứng nặng/khó thở, đau bụng dữ dội kèm bụng cứng.
+}]}, contents=[{parts=[{text=Triệu chứng/ câu hỏi về thuốc (xưng hô mình–bạn): tôi mang thai 7 tháng xuất hiện vết thương nhỏ khoảng 3mm ở vùng đùi thì nên lưu ý những gì}], role=user}]}] as "application/json"
+2025-10-24 19:25:19.975 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - Response 200 OK
+2025-10-24 19:25:19.977 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.client.RestTemplate[0;39m - Reading to [java.util.Map<?, ?>]
+2025-10-24 19:25:19.994 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:25:19.995 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{candidates=[{content={parts=[{text=Chào bạn, mình hiểu bạn đang lo lắng về vết thương nhỏ ở đùi khi (truncated)...]
+2025-10-24 19:25:19.996 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:25:51.121 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/ai/chat
+2025-10-24 19:25:51.122 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:25:51.123 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:25:51.124 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:25:51.124 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/ai/chat
+2025-10-24 19:25:51.125 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/ai/chat", parameters={}
+2025-10-24 19:25:51.126 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:25:51.127 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [{message=vậy dùng penicillin có tác dụng gì trong trường hợp này không, userId=admin}]
+2025-10-24 19:25:51.128 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.client.RestTemplate[0;39m - HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyALt1XKo1q0fyxPPiLFSQvqPqCeFd8ARAQ
+2025-10-24 19:25:51.129 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.client.RestTemplate[0;39m - Accept=[application/json, application/*+json]
+2025-10-24 19:25:51.129 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.client.RestTemplate[0;39m - Writing [{generationConfig={maxOutputTokens=800, topP=0.9, temperature=0.6}, systemInstruction={parts=[{text=    Bạn là Bác sĩ AI phong cách Gen Z. Xưng hô “mình – bạn”, nói chuyện thân thiện như hai người bạn.
+
+    Mục tiêu: tư vấn sức khỏe thân thiện và có thể GỢI Ý THUỐC OTC (không cần toa) khi phù hợp.
+    Được phép gợi ý nhóm thuốc thông dụng: giảm đau/hạ sốt (paracetamol), kháng viêm không steroid (ibuprofen),
+    thuốc nhỏ/xịt mũi co mạch ngắn hạn, nước muối sinh lý, siro ho/long đờm, thuốc dị ứng (kháng histamine),
+    men vi sinh, bôi ngoài da nhẹ (hydrocortisone 1%, kẽm oxide), thuốc chống say tàu xe OTC, vitamin/khoáng.
+
+    KHÔNG gợi ý hoặc kê: kháng sinh, thuốc corticoid đường uống/tiêm, thuốc tim mạch, thuốc hạ đường huyết,
+    thuốc chống động kinh, thuốc an thần/benzodiazepine, thuốc gây nghiện/kiểm soát đặc biệt, thuốc kê đơn nói chung.
+
+    Khi nói về thuốc:
+    - Trình bày ngắn gọn công dụng + liều dùng cơ bản người lớn (nếu an toàn), kèm cảnh báo TDP thường gặp.
+    - Tránh nêu liều cho TRẺ EM, PNCT/cho bú, người có bệnh nền nặng; trong các trường hợp này chỉ nói nguyên tắc an toàn
+      và đề nghị hỏi dược sĩ/bác sĩ để chỉnh liều theo cân nặng/ tình trạng.
+    - Luôn thêm câu: “Hãy đọc kỹ hướng dẫn sử dụng và hỏi dược sĩ/bác sĩ nếu không chắc chắn.”
+
+    Phong cách:
+    - Câu ngắn, dễ hiểu, 1–2 emoji phù hợp.
+    - Tôn trọng, tích cực, tránh thuật ngữ khó.
+    - Nếu thông tin thiếu, chỉ hỏi bù TỐI ĐA 1–2 câu, tránh hỏi dồn dập.
+
+    Cấu trúc trả lời (nếu phù hợp):
+    1) Nguyên nhân có thể
+    2) Thuốc OTC & cách xử lý tại nhà (nêu tên hoạt chất + liều cơ bản người lớn nếu an toàn, kèm cảnh báo)
+    3) Khi nào cần gặp bác sĩ
+    4) Lưu ý quan trọng
+
+    Nhắc đi khám ngay nếu có dấu hiệu nguy hiểm: khó thở tăng dần, đau ngực dữ dội, sốt cao kéo dài,
+    yếu liệt/nói khó, lơ mơ, nôn ói không cầm, chảy máu không cầm, SpO₂ thấp, dị ứng nặng/khó thở, đau bụng dữ dội kèm bụng cứng.
+}]}, contents=[{parts=[{text=Triệu chứng/ câu hỏi về thuốc (xưng hô mình–bạn): vậy dùng penicillin có tác dụng gì trong trường hợp này không}], role=user}]}] as "application/json"
+2025-10-24 19:25:54.591 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.client.RestTemplate[0;39m - Response 200 OK
+2025-10-24 19:25:54.592 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.client.RestTemplate[0;39m - Reading to [java.util.Map<?, ?>]
+2025-10-24 19:25:54.596 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:25:54.597 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{candidates=[{content={parts=[{text=Chào bạn, mình là Bác sĩ AI đây. Penicillin là một loại kháng si (truncated)...]
+2025-10-24 19:25:54.601 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:26:23.404 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/ai/chat
+2025-10-24 19:26:23.405 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:26:23.406 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:26:23.407 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:26:23.407 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/ai/chat
+2025-10-24 19:26:23.408 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/ai/chat", parameters={}
+2025-10-24 19:26:23.408 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.ChatController#chat(Map)
+2025-10-24 19:26:23.410 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [{message=chỉ là 1 vết thương nhỏ ở vùng đùi do vật sắc nhọn quẹt phải thôi, userId=admin}]
+2025-10-24 19:26:23.412 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - HTTP POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyALt1XKo1q0fyxPPiLFSQvqPqCeFd8ARAQ
+2025-10-24 19:26:23.412 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - Accept=[application/json, application/*+json]
+2025-10-24 19:26:23.413 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - Writing [{generationConfig={maxOutputTokens=800, topP=0.9, temperature=0.6}, systemInstruction={parts=[{text=    Bạn là Bác sĩ AI phong cách Gen Z. Xưng hô “mình – bạn”, nói chuyện thân thiện như hai người bạn.
+
+    Mục tiêu: tư vấn sức khỏe thân thiện và có thể GỢI Ý THUỐC OTC (không cần toa) khi phù hợp.
+    Được phép gợi ý nhóm thuốc thông dụng: giảm đau/hạ sốt (paracetamol), kháng viêm không steroid (ibuprofen),
+    thuốc nhỏ/xịt mũi co mạch ngắn hạn, nước muối sinh lý, siro ho/long đờm, thuốc dị ứng (kháng histamine),
+    men vi sinh, bôi ngoài da nhẹ (hydrocortisone 1%, kẽm oxide), thuốc chống say tàu xe OTC, vitamin/khoáng.
+
+    KHÔNG gợi ý hoặc kê: kháng sinh, thuốc corticoid đường uống/tiêm, thuốc tim mạch, thuốc hạ đường huyết,
+    thuốc chống động kinh, thuốc an thần/benzodiazepine, thuốc gây nghiện/kiểm soát đặc biệt, thuốc kê đơn nói chung.
+
+    Khi nói về thuốc:
+    - Trình bày ngắn gọn công dụng + liều dùng cơ bản người lớn (nếu an toàn), kèm cảnh báo TDP thường gặp.
+    - Tránh nêu liều cho TRẺ EM, PNCT/cho bú, người có bệnh nền nặng; trong các trường hợp này chỉ nói nguyên tắc an toàn
+      và đề nghị hỏi dược sĩ/bác sĩ để chỉnh liều theo cân nặng/ tình trạng.
+    - Luôn thêm câu: “Hãy đọc kỹ hướng dẫn sử dụng và hỏi dược sĩ/bác sĩ nếu không chắc chắn.”
+
+    Phong cách:
+    - Câu ngắn, dễ hiểu, 1–2 emoji phù hợp.
+    - Tôn trọng, tích cực, tránh thuật ngữ khó.
+    - Nếu thông tin thiếu, chỉ hỏi bù TỐI ĐA 1–2 câu, tránh hỏi dồn dập.
+
+    Cấu trúc trả lời (nếu phù hợp):
+    1) Nguyên nhân có thể
+    2) Thuốc OTC & cách xử lý tại nhà (nêu tên hoạt chất + liều cơ bản người lớn nếu an toàn, kèm cảnh báo)
+    3) Khi nào cần gặp bác sĩ
+    4) Lưu ý quan trọng
+
+    Nhắc đi khám ngay nếu có dấu hiệu nguy hiểm: khó thở tăng dần, đau ngực dữ dội, sốt cao kéo dài,
+    yếu liệt/nói khó, lơ mơ, nôn ói không cầm, chảy máu không cầm, SpO₂ thấp, dị ứng nặng/khó thở, đau bụng dữ dội kèm bụng cứng.
+}]}, contents=[{parts=[{text=Triệu chứng/ câu hỏi về thuốc (xưng hô mình–bạn): chỉ là 1 vết thương nhỏ ở vùng đùi do vật sắc nhọn quẹt phải thôi}], role=user}]}] as "application/json"
+2025-10-24 19:26:30.680 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - Response 200 OK
+2025-10-24 19:26:30.682 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.client.RestTemplate[0;39m - Reading to [java.util.Map<?, ?>]
+2025-10-24 19:26:30.686 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:26:30.687 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [{candidates=[{content={parts=[{text=Oke bạn, vết thương nhỏ do vật sắc nhọn quẹt phải ở đùi, mình sẽ (truncated)...]
+2025-10-24 19:26:30.689 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:31:42.024 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/auth/login
+2025-10-24 19:31:42.027 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-24 19:31:42.028 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:31:42.030 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-24 19:31:42.030 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-24 19:31:42.030 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-24 19:31:42.031 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-24 19:31:42.032 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@534b2fdd]
+2025-10-24 19:31:42.466 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-24 19:31:42.481 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:31:42.482 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@90117ec]
+2025-10-24 19:31:42.484 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:31:42.816 [39mDEBUG[0;39m [http-nio-8081-exec-10] [36mo.s.security.web.FilterChainProxy[0;39m - Securing OPTIONS /api/admin/users
+2025-10-24 19:31:42.831 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:31:42.861 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:42.862 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:42.863 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:42.864 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:42.865 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:42.865 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:31:42.865 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:31:42.866 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:42.868 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:31:42.869 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:31:42.874 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:31:42.875 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.876 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.877 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.878 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.878 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.878 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.879 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:42.879 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:31:42.880 [39mDEBUG[0;39m [http-nio-8081-exec-8] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:31:47.914 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:31:47.924 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:47.926 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:47.926 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:47.927 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:47.928 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:47.928 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:31:47.929 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:31:47.930 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:47.945 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:31:47.946 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:31:47.946 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:31:47.947 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.947 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.948 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.949 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.950 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.950 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.951 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:47.952 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:31:47.953 [39mDEBUG[0;39m [http-nio-8081-exec-7] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:31:49.405 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:31:49.416 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:49.417 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:49.418 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:49.419 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:49.420 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:49.420 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:31:49.420 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:31:49.421 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:49.423 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:31:49.424 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:31:49.424 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:31:49.425 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.426 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.426 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.427 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.427 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.428 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.428 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:49.429 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:31:49.429 [39mDEBUG[0;39m [http-nio-8081-exec-6] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:31:50.575 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:31:50.586 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:50.587 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:50.589 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:50.589 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:50.590 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:50.590 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:31:50.590 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:31:50.591 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:50.592 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:31:50.592 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:31:50.592 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:31:50.593 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.593 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.594 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.594 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.595 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.597 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.597 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:50.597 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:31:50.597 [39mDEBUG[0;39m [http-nio-8081-exec-5] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:31:51.656 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:31:51.665 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:51.666 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:51.667 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:51.667 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:51.668 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:51.668 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:31:51.668 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:31:51.669 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:31:51.670 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:31:51.670 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:31:51.671 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:31:51.672 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.672 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.672 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.672 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.673 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.674 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.674 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:31:51.674 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:31:51.674 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:32:38.823 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:32:38.836 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:32:38.837 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:32:38.838 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:32:38.839 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:32:38.840 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:32:38.840 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:32:38.840 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:32:38.841 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:32:38.843 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:32:38.845 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:32:38.845 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:32:38.846 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.846 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.847 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.847 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.847 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.848 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.848 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:32:38.849 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:32:38.849 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:34:01.220 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:34:01.229 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:01.231 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:01.231 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:01.234 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:01.235 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:01.235 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:34:01.236 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:34:01.236 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:01.238 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:34:01.238 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:34:01.239 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:34:01.239 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.240 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.241 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.242 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.243 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.244 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.244 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:01.245 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:34:01.245 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:34:02.041 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:34:02.052 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:02.052 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:02.054 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:02.054 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:02.055 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:02.055 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:34:02.056 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:34:02.056 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-24 19:34:02.057 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.r.ResourceHttpRequestHandler[0;39m - Resource not found
+2025-10-24 19:34:02.058 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 404 NOT_FOUND
+2025-10-24 19:34:02.059 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /error
+2025-10-24 19:34:02.060 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.060 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.060 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.060 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.061 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.061 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.062 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-24 19:34:02.062 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:34:02.062 [39mDEBUG[0;39m [http-nio-8081-exec-9] [36mo.s.s.w.a.Http403ForbiddenEntryPoint[0;39m - Pre-authenticated entry point called. Rejecting access
+2025-10-24 19:47:50.989 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-24 19:47:51.128 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 14504 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-24 19:47:51.131 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-24 19:47:51.133 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-24 19:47:52.591 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-24 19:47:52.711 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 105 ms. Found 4 JPA repository interfaces.
+2025-10-24 19:47:54.080 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-24 19:47:54.098 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-24 19:47:54.101 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-24 19:47:54.102 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-24 19:47:54.338 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-24 19:47:54.339 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3088 ms
+2025-10-24 19:47:54.619 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-24 19:47:54.863 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-24 19:47:54.884 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-24 19:47:55.349 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-24 19:47:55.685 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-24 19:47:55.729 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-24 19:47:56.302 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a1e912f
+2025-10-24 19:47:56.308 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-24 19:47:56.944 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-24 19:47:59.253 [34mINFO [0;39m [main] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-24 19:47:59.437 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 19:48:00.138 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-24 19:48:00.648 [31mWARN [0;39m [main] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-24 19:48:00.825 [31mWARN [0;39m [main] [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/nckh/yte/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'adminDoctorController' method 
+com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+to {POST [/api/admin/create-doctor]}: There is already 'adminController' bean method
+com.nckh.yte.controller.AdminController#createDoctor(Map) mapped.
+2025-10-24 19:48:00.827 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 19:48:00.830 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-10-24 19:48:00.835 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-10-24 19:48:00.838 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Stopping service [Tomcat]
+2025-10-24 19:48:00.860 [34mINFO [0;39m [main] [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-24 19:48:00.890 [1;31mERROR[0;39m [main] [36mo.s.boot.SpringApplication[0;39m - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/nckh/yte/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'adminDoctorController' method 
+com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+to {POST [/api/admin/create-doctor]}: There is already 'adminController' bean method
+com.nckh.yte.controller.AdminController#createDoctor(Map) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:654)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.nckh.yte.YteApplication.main(YteApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'adminDoctorController' method 
+com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+to {POST [/api/admin/create-doctor]}: There is already 'adminController' bean method
+com.nckh.yte.controller.AdminController#createDoctor(Map) mapped.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'adminDoctorController' method 
+com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+to {POST [/api/admin/create-doctor]}: There is already 'adminController' bean method
+com.nckh.yte.controller.AdminController#createDoctor(Map) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1164)
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.createMvcMatchers(AbstractRequestMatcherRegistry.java:112)
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:210)
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:276)
+	at com.nckh.yte.config.SecurityConfig.lambda$securityFilterChain$2(SecurityConfig.java:53)
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1466)
+	at com.nckh.yte.config.SecurityConfig.securityFilterChain(SecurityConfig.java:51)
+	at com.nckh.yte.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$1(<generated>)
+	at com.nckh.yte.config.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.nckh.yte.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'adminDoctorController' method 
+com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+to {POST [/api/admin/create-doctor]}: There is already 'adminController' bean method
+com.nckh.yte.controller.AdminController#createDoctor(Map) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:663)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1312)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:110)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:98)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 43 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminDoctorController' method 
+com.nckh.yte.controller.AdminDoctorController#createDoctor(Req)
+to {POST [/api/admin/create-doctor]}: There is already 'adminController' bean method
+com.nckh.yte.controller.AdminController#createDoctor(Map) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:667)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:633)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:441)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 56 common frames omitted
+2025-10-24 19:51:20.182 [34mINFO [0;39m [background-preinit] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-24 19:51:20.276 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Starting YteApplication using Java 17.0.12 with PID 19164 (C:\Users\nhatn\java_project\yte\target\classes started by nhatn in C:\Users\nhatn\java_project\yte)
+2025-10-24 19:51:20.277 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Running with Spring Boot v3.1.4, Spring v6.0.12
+2025-10-24 19:51:20.278 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - No active profile set, falling back to 1 default profile: "default"
+2025-10-24 19:51:21.135 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-24 19:51:21.261 [34mINFO [0;39m [main] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 111 ms. Found 4 JPA repository interfaces.
+2025-10-24 19:51:22.100 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8081 (http)
+2025-10-24 19:51:22.115 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-24 19:51:22.119 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-10-24 19:51:22.120 [34mINFO [0;39m [main] [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-10-24 19:51:22.285 [34mINFO [0;39m [main] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-10-24 19:51:22.286 [34mINFO [0;39m [main] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1956 ms
+2025-10-24 19:51:22.419 [34mINFO [0;39m [main] [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-24 19:51:22.502 [34mINFO [0;39m [main] [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-10-24 19:51:22.506 [34mINFO [0;39m [main] [36morg.hibernate.cfg.Environment[0;39m - HHH000406: Using bytecode reflection optimizer
+2025-10-24 19:51:22.695 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-24 19:51:22.874 [34mINFO [0;39m [main] [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-24 19:51:22.890 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-10-24 19:51:23.142 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e948f1c
+2025-10-24 19:51:23.146 [34mINFO [0;39m [main] [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-10-24 19:51:23.482 [34mINFO [0;39m [main] [36mo.h.b.i.BytecodeProviderInitiator[0;39m - HHH000021: Bytecode provider name : bytebuddy
+2025-10-24 19:51:24.308 [34mINFO [0;39m [main] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-24 19:51:24.413 [34mINFO [0;39m [main] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 19:51:24.806 [39mDEBUG[0;39m [main] [36mcom.nckh.yte.security.JwtAuthFilter[0;39m - Filter 'jwtAuthFilter' configured for use
+2025-10-24 19:51:25.162 [31mWARN [0;39m [main] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-24 19:51:25.378 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - 22 mappings in 'requestMappingHandlerMapping'
+2025-10-24 19:51:25.517 [39mDEBUG[0;39m [main] [36mo.s.w.s.h.SimpleUrlHandlerMapping[0;39m - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-10-24 19:51:25.563 [34mINFO [0;39m [main] [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b6942a0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64641998, org.springframework.security.web.context.SecurityContextHolderFilter@518ed9b4, org.springframework.security.web.header.HeaderWriterFilter@31c29db1, org.springframework.web.filter.CorsFilter@2e845f1c, org.springframework.security.web.authentication.logout.LogoutFilter@1bf4a79b, com.nckh.yte.security.JwtAuthFilter@5408fca1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@694dc99b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@549fe529, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9afe4e, org.springframework.security.web.session.SessionManagementFilter@7af17d31, org.springframework.security.web.access.ExceptionTranslationFilter@219ec4b6, org.springframework.security.web.access.intercept.AuthorizationFilter@15e748b5]
+2025-10-24 19:51:25.637 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-24 19:51:25.681 [39mDEBUG[0;39m [main] [36mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-24 19:51:25.876 [34mINFO [0;39m [main] [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-24 19:51:25.903 [34mINFO [0;39m [main] [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 8081 (http) with context path ''
+2025-10-24 19:51:25.917 [34mINFO [0;39m [main] [36mcom.nckh.yte.YteApplication[0;39m - Started YteApplication in 6.3 seconds (process running for 6.695)
+2025-10-24 19:51:37.533 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-24 19:51:37.533 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-10-24 19:51:37.533 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected StandardServletMultipartResolver
+2025-10-24 19:51:37.533 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected AcceptHeaderLocaleResolver
+2025-10-24 19:51:37.533 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected FixedThemeResolver
+2025-10-24 19:51:37.533 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3bfead8d
+2025-10-24 19:51:37.540 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ad57db1
+2025-10-24 19:51:37.541 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-24 19:51:37.541 [34mINFO [0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 8 ms
+2025-10-24 19:51:37.557 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:51:37.691 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:51:37.701 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:51:37.701 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:51:37.701 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:51:37.701 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:51:37.707 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:51:37.710 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:51:37.717 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:51:37.764 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:51:37.767 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=77da7a88-3965-4dd8-b3e8-2571f85a23af, fullName=null, username=doctor, password=, role=BASIC, en (truncated)...]
+2025-10-24 19:51:37.788 [39mDEBUG[0;39m [http-nio-8081-exec-1] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:52:01.356 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Securing POST /api/auth/login
+2025-10-24 19:52:01.358 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.w.a.AnonymousAuthenticationFilter[0;39m - Set SecurityContextHolder to anonymous SecurityContext
+2025-10-24 19:52:01.359 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-24 19:52:01.360 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.security.web.FilterChainProxy[0;39m - Secured POST /api/auth/login
+2025-10-24 19:52:01.360 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - POST "/api/auth/login", parameters={}
+2025-10-24 19:52:01.361 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AuthController#login(LoginRequest)
+2025-10-24 19:52:01.448 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.RequestResponseBodyMethodProcessor[0;39m - Read "application/json;charset=UTF-8" to [com.nckh.yte.dto.LoginRequest@665744d9]
+2025-10-24 19:52:02.410 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.s.a.d.DaoAuthenticationProvider[0;39m - Authenticated user
+2025-10-24 19:52:02.454 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:52:02.454 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [com.nckh.yte.dto.AuthResponse@176e3369]
+2025-10-24 19:52:02.460 [39mDEBUG[0;39m [http-nio-8081-exec-4] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
+2025-10-24 19:52:03.321 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Securing GET /api/admin/users
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.security.web.FilterChainProxy[0;39m - Secured GET /api/admin/users
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - GET "/api/admin/users", parameters={}
+2025-10-24 19:52:03.340 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.RequestMappingHandlerMapping[0;39m - Mapped to com.nckh.yte.controller.AdminController#getAllUsers()
+2025-10-24 19:52:03.370 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2025-10-24 19:52:03.373 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.w.s.m.m.a.HttpEntityMethodProcessor[0;39m - Writing [[{id=77da7a88-3965-4dd8-b3e8-2571f85a23af, fullName=null, username=doctor, password=, role=BASIC, en (truncated)...]
+2025-10-24 19:52:03.373 [39mDEBUG[0;39m [http-nio-8081-exec-3] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed 200 OK
